@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from '../components/Image'
 
 function About({ data: { contact }}) {
   return <>
@@ -24,7 +24,7 @@ function About({ data: { contact }}) {
     <h3>Family-Raised AKC Puppies</h3>
     <h4>Bulldog Puppies, with health as our #1 priority</h4>
     <p>Welcome to xxx.com here we love and care for our french bulldogs, making sure our puppies are raised lovingly and compassionately. We have been raising frenchies for almost XX years.</p>
-    <p>We only breed top quality french bulldogs. Our dogs are "hand-raised" in a fun and loving environment and are well socialized and adjusted to people.</p>
+    <p>We only breed top quality french bulldogs. Our dogs are &quot;hand-raised&quot; in a fun and loving environment and are well socialized and adjusted to people.</p>
     <p>As a small in-home kennel with a limited but well-planned breeding program, we are confident we have the best prices in San Diego for high quality Frenchies (we want happy-returning customers!)</p>
     <p>Contact me directly at {contact?.phone.display}</p>
 

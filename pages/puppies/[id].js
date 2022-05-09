@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import Image from "next/image";
+import Image from '../../components/Image'
 
 const PuppyDetails = ({ data: { puppies = [], contact }}) => {
   const { id } = useRouter().query;
