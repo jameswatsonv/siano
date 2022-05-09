@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div style={{textAlign: 'center'}}>
-        <Image src={process.env.BACKEND_URL + '/home.jpg'} width={472} height={578} />
+        <Image src={'/home.jpg'} width={472} height={578} />
       </div>
       
       <h1>French Bulldog Puppies in San Diego</h1>
