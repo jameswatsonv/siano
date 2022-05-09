@@ -1,0 +1,74 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page h1 {
+  color: green;
+  font-size: 4rem;
+}
+
+.pageContainer {
+  min-height: 60vh;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 1rem;
+}
+
+.pageContainer a {
+  color: darkgreen;
+  text-decoration: underline;
+}
+
+.main {
+
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem 0 0;
+  justify-content: center;
+  background-color: #646464;
+  color: #EAEAEA;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.footerContent {
+  flex: 1 1;
+  display: flex;
+}
+
+.footerContent section {
+  flex: 1 1;
+  padding: 0 1rem;
+}
+
+.footerContent h4 {
+  border-bottom: 1px solid black;
+}
+
+.footerFooter {
+  background-color: #3b3b3b;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .pageContainer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .footerContent {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+}
