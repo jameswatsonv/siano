@@ -4,7 +4,7 @@ import NextImage from "next/image";
 export default function Image(props) {
   const _props = {
     ...props,
-    src: process.env.BACKEND_URL + props.src,
+    src: process.env.NEXT_PUBLIC_BACKEND_URL + props.src,
   }
   return (
     <NextImage
