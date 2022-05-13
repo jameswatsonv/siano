@@ -10,7 +10,7 @@ const nextConfig = (phase) => {
   };
 
   if (phase === PHASE_PRODUCTION_BUILD || phase === PHASE_EXPORT) {
-    config.basePath = '/siano';
+    config.basePath = process.env.NEXT_PUBLIC_BACKEND_URL ?? '/';
   }
 
   return config;
