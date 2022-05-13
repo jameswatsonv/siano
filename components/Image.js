@@ -1,15 +1,16 @@
 import NextImage from "next/image";
 
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+
 // This is necessary because we do some weird stuff for GitHub pages. We can remove this eventually
-export default function Image(props) {
-  const _props = {
-    ...props,
-    src: process.env.NEXT_PUBLIC_BACKEND_URL + props.src,
-  }
+const Image = (props) => {
   return (
     <NextImage
-      {..._props}
+      {...props}
+      src={BACKEND_URL + props.src}
       unoptimized={true}
     />
   );
 }
+
+export default Image;

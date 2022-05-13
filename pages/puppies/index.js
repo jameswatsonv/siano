@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Image from '../../components/Image'
+import Link from '../../components/Link';
+import Image from '../../components/Image';
 
 function Puppies({ data: { puppies = [] } }) {
   return <>

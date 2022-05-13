@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Link from './Link';
 import styles from '../styles/Header.module.css';
 
 const headerPaths = {
