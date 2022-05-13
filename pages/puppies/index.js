@@ -1,4 +1,4 @@
-import Link from '../../components/Link';
+import Link from 'next/link';
 import Image from '../../components/Image';
 
 function Puppies({ data: { puppies = [] } }) {

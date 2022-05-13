@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Link from './Link';
+import Link from 'next/link';
 import styles from '../styles/Header.module.css';
 
 const headerPaths = {
@@ -24,7 +24,9 @@ const Nav = () => {
     </Link>
   };
 
-  const headerLinks = Object.entries(headerPaths).map(([text, href]) => <HeaderLink text={text} href={href} key={href} />);
+  const headerLinks = Object.entries(headerPaths).map(([text, href]) =>
+    <HeaderLink text={text} href={href} key={href} />
+  );
   return <nav className={styles.headerNav}>{headerLinks}</nav>
 }
 
@@ -41,7 +43,7 @@ function Header({ data: { contact = {} }}) {
     <Head>
       <title>San Diego Frenchies</title>
       <meta name="description" content="French bulldog adoption in San Diego" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href={`${process.env.NEXT_PUBLIC_BACKEND_URL}/favicon.ico`} />
     </Head>
 
     <HeaderBar phone={phone} />
